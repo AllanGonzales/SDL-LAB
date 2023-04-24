@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Prompt the user to enter a number and store it in the variable `n`
+    int n;
+    cout << "Enter how many numbers you want to add: ";
+    cin >> n;
+
+    // Calculate the sum of the first `n` positive integers and store the result in the variable `sum`
+    int sum = 0;
+    for (int i = 1; i <= n; i++) {
+        sum += i;
+    }
+
+    // Calculate the average of the first `n` positive integers and store the result in the variable `average`
+    double average = static_cast<double>(sum) / n;
+
+    // Print out the `sum` and `average` values
+    cout << "The sum of the first " << n << " positive integers is: " << sum << endl;
+    cout << "The average of the first " << n << " positive integers is: " << average << endl;
+
+    return 0;
+}
